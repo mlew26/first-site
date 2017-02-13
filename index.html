@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <title>ACES Learn To Code...</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>  <script src="js/javascript.js"></script>
+
+</head>
+
+<body>ACES Learn To Code</body>
+
+<div id="content">
+    <div id="product">
+    </div>
+</div>
+
+<div id="product">
+    <div class="onethird">
+        <img src="images/shirts.jpg" alt="Smiley face" height="175" width="175" />
+    </div>
+    <div class="twothird">
+        <h1>Plain Colored T-Shirts </h1>
+        <form id="addToCart">
+            <h2 id="price">$14.99</h2>
+            <p>
+                <label for="num">Quantity:</label>
+                <input type="text" id="num" name="num" size="5" />
+            </p>
+            <p>
+                <label for="color">Color:</label>
+                <select id="color" name="color">
+                    <option value="orange">Orange</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="yellow">Yellow</option>
+                </select>
+            </p>
+            <p>
+                <label for="size">Size:</label>
+                <span class="oneline">
+                    <label><input type="radio" name="size"
+                      id="size1" value="S" /> Small</label>
+                    <label><input type="radio" name="size"
+                      id="size2" value="M" /> Medium</label>
+                    <label><input type="radio" name="size"
+                      id="size3" value="L" /> Large</label>
+                    <label><input type="radio" name="size"
+                      id="size4" value="XL" /> X-Large</label>
+                </span>
+            </p>
+            <p>
+                <input type="button" value="Order" id="submit" class="bigButton" onclick=order(var num = document.getElementById('num').value); />
+            </p>
+        </form>
+        <h2>Description</h2>
+        <p>These shirts are very shirty. They are the shirtiest shirts of any shirt that any shirtmaker in the history of shirtmaking has ever crafted.</p>
+    </div>
+</div>
+<div id=”product”>
+
+</div>
+<hr />
+<div id=”productspecs”>
+    <h2>Product Specs</h2>
+    <table>
+        <thead>
+            <tr>
+                <th width="20%">&nbsp;</th>
+                <th width="20%">Orange</th>
+                <th width="20%">Blue</th>
+                <th width="20%">Green</th>
+                <th width="20%">Yellow</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Product Dimensions</th>
+                <td>13 x 8 x 1 inches</td>
+                <td>12 x 7 x 0 inches</td>
+                <td>15 x 5 x 5 inches</td>
+                <td>22 x 2 x 2 inches</td>
+            </tr>
+            <tr>
+                <th>Shipping Weight</th>
+                <td>1 pounds</td>
+                <td>2 pounds</td>
+                <td>15 pounds</td>
+                <td>1 pounds</td>
+            </tr>
+            <tr>
+                <th>Barcode</th>
+                <td>B00B81I4IP</td>
+                <td>B00B81E4IO</td>
+                <td>B00B81A4IR</td>
+                <td>B00B81T4IK</td>
+            </tr>
+            <tr>
+                <th>Item model number</th>
+                <td>FTL-4A3001C</td>
+                <td>STL-4B3001A</td>
+                <td>FTP-4I3001R</td>
+                <td>FRT-4G3001P</td>
+            </tr>
+            <tr>
+                <th>Date first available</th>
+                <td>May 7, 1979</td>
+                <td>May 7, 1980</td>
+                <td>May 7, 1981</td>
+                <td>Feb 29, 2016</td>
+            </tr>
+            <tr>
+                <th>Domestic Shipping</th>
+                <td>This item is also available for shipping to select countries outside the U.S.</td>
+                <td>This item is also available for shipping to select countries outside the U.S.</td>
+                <td>This item is not eligible for domestic shipping.</td>
+                <td>This item is also available for shipping to select countries outside the U.S.</td>
+            </tr>
+            <tr>
+                <th>International Shipping</th>
+                <td>This item is not eligible for international shipping.</td>
+                <td>This item is not eligible for international shipping.</td>
+                <td>This item is not eligible for international shipping.</td>
+                <td>This item is not eligible for international shipping.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="productspecs">
+
+</div>
+<hr />
+<div id="reviews">
+    <h2>Reviews</h2>
+    <form method="post" id="reviewform">
+        <p>
+            <label for="reviewer">Name</label>
+            <input type="text" id="reviewer" name="reviewer" placeholder="Name" />
+        </p>
+        <p>
+            <label for="rating">Rating</label>
+            <select id="rating" name="rating">
+                <option value="10">10 - Outstanding.</option>
+                <option value="9">9 - Excellent.</option>
+                <option value="8">8 - Very good.</option>
+                <option value="7">7 - Good.</option>
+                <option value="6">6 - Fair.</option>
+                <option value="5">5 - Average.</option>
+                <option value="4">4 - Below average.</option>
+                <option value="3">3 - Poor.</option>
+                <option value="2">2 - Very poor.</option>
+                <option value="1">1 - Defies description.</option>
+            </select>
+        </p>
+        <p>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="50" rows="5"></textarea>
+        </p>
+        <p><input type="submit" id="postReview" value="Post Review" class="bigButton" /></p>
+    </form>
+    <ul id="review">
+        <li class="review">
+            <h3>Harry Henderson</h3>
+            <p class="rating">8 - Very good.</p>
+            <p class="comment">They weren't kidding when they said these were the shirtiest shirts!  I had my doubts when I placed my order--I've been disappointed with the shirtiness of shirts before--but these guys really came through.</p>
+        </li>
+</div>
+
+
+
+
+</html>
